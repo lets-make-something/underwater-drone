@@ -5,7 +5,7 @@ from socket import socket, AF_INET, SOCK_DGRAM
 
 host = ''
 port = 5000
-address = "127.0.0.1"
+address = "192.168.3.2"
 sock = socket(AF_INET, SOCK_DGRAM)
 device_path = "/dev/input/js0"
 
