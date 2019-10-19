@@ -36,6 +36,8 @@ md_yain1 = 0; #AIN1
 md_ybin1 = 0; #BIN1
 md_ybin2 = 0; #BIN2
 
+power_save = 512;
+
 host = '192.168.3.2'
 port = 5000
 
@@ -69,7 +71,7 @@ while True:
       else:
         md_xbin2 = 1
         md_xbin1 = 0
-      md_xpwmb = abs(int(ds3_val/256))
+      md_xpwmb = abs(int(ds3_val/power_save))
       #yb
       if ds3_val < 0:
         md_ybin2 = 1
@@ -77,7 +79,7 @@ while True:
       else:
         md_ybin2 = 0
         md_ybin1 = 1
-      md_ypwmb = abs(int(ds3_val/256))
+      md_ypwmb = abs(int(ds3_val/power_save))
  
     elif (ds3_type == 2 and ds3_num ==1):
       #xb
@@ -87,7 +89,7 @@ while True:
       else:
         md_xbin2 = 1
         md_xbin1 = 0
-      md_xpwmb = abs(int(ds3_val/256))
+      md_xpwmb = abs(int(ds3_val/power_save))
       #yb
       if ds3_val < 0:
         md_ybin2 = 0
@@ -95,7 +97,7 @@ while True:
       else:
         md_ybin2 = 1
         md_ybin1 = 0
-      md_ypwmb = abs(int(ds3_val/256))
+      md_ypwmb = abs(int(ds3_val/power_save))
  
     elif (ds3_type == 2 and ds3_num ==2):
       #xa
@@ -105,7 +107,7 @@ while True:
       else:
         md_xain2 = 1
         md_xain1 = 0
-      md_xpwma = abs(int(ds3_val/256))
+      md_xpwma = abs(int(ds3_val/power_save))
       #ya
       if ds3_val < 0:
         md_yain2 = 1
@@ -113,7 +115,7 @@ while True:
       else:
         md_yain2 = 0
         md_yain1 = 1
-      md_ypwma = abs(int(ds3_val/256))
+      md_ypwma = abs(int(ds3_val/power_save))
 
     elif (ds3_type == 2 and ds3_num ==5):
       #xa
@@ -123,7 +125,7 @@ while True:
       else:
         md_xain2 = 0
         md_xain1 = 1
-      md_xpwma = abs(int(ds3_val/256))
+      md_xpwma = abs(int(ds3_val/power_save))
       #ya
       if ds3_val < 0:
         md_yain2 = 1
@@ -131,7 +133,7 @@ while True:
       else:
         md_yain2 = 0
         md_yain1 = 1
-      md_ypwma = abs(int(ds3_val/256))
+      md_ypwma = abs(int(ds3_val/power_save))
 
     else:
       change = 0;
