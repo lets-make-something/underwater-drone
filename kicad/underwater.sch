@@ -63,7 +63,7 @@ L Connector:Conn_01x02_Female J4
 U 1 1 5DB9F0BC
 P 750 1550
 F 0 "J4" H 778 1526 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 778 1435 50  0000 L CNN
+F 1 "uart" H 778 1435 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 750 1550 50  0001 C CNN
 F 3 "~" H 750 1550 50  0001 C CNN
 	1    750  1550
@@ -976,7 +976,7 @@ L Connector:Conn_01x02_Female J12
 U 1 1 5E495CAB
 P 3650 750
 F 0 "J12" H 3678 726 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 3678 635 50  0000 L CNN
+F 1 "esp_power5v_in" H 3678 635 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3650 750 50  0001 C CNN
 F 3 "~" H 3650 750 50  0001 C CNN
 	1    3650 750 
@@ -1038,7 +1038,7 @@ L Connector:Screw_Terminal_01x02 J1
 U 1 1 5E68DAE7
 P -500 6600
 F 0 "J1" H -420 6592 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H -420 6501 50  0000 L CNN
+F 1 "Batt_out" H -420 6501 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H -500 6600 50  0001 C CNN
 F 3 "~" H -500 6600 50  0001 C CNN
 	1    -500 6600
@@ -1215,7 +1215,7 @@ L Connector:Screw_Terminal_01x02 J17
 U 1 1 5E811752
 P 8650 9750
 F 0 "J17" H 8730 9742 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 8730 9651 50  0000 L CNN
+F 1 "Batt_out" H 8730 9651 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8650 9750 50  0001 C CNN
 F 3 "~" H 8650 9750 50  0001 C CNN
 	1    8650 9750
@@ -1249,7 +1249,7 @@ L Connector:Screw_Terminal_01x02 J19
 U 1 1 5E829CD5
 P 8950 6200
 F 0 "J19" V 8822 6280 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" V 8913 6280 50  0000 L CNN
+F 1 "Batt_in" V 8913 6280 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8950 6200 50  0001 C CNN
 F 3 "~" H 8950 6200 50  0001 C CNN
 	1    8950 6200
@@ -1326,7 +1326,7 @@ L Connector:Conn_01x04_Female J15
 U 1 1 5EA2B7CA
 P 7450 100
 F 0 "J15" V 7388 -188 50  0000 R CNN
-F 1 "Conn_01x04_Female" V 7297 -188 50  0000 R CNN
+F 1 "usb_in" V 7297 -188 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7450 100 50  0001 C CNN
 F 3 "~" H 7450 100 50  0001 C CNN
 	1    7450 100 
@@ -1389,7 +1389,7 @@ L Connector:Conn_01x02_Female J13
 U 1 1 5EB10DD6
 P 4350 -200
 F 0 "J13" H 4242 -525 50  0000 C CNN
-F 1 "Conn_01x02_Female" H 4242 -434 50  0000 C CNN
+F 1 "esp_power5v_out" H 4242 -434 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4350 -200 50  0001 C CNN
 F 3 "~" H 4350 -200 50  0001 C CNN
 	1    4350 -200
@@ -1712,7 +1712,7 @@ L Connector:Conn_01x06_Female J11
 U 1 1 5F230949
 P 2950 5250
 F 0 "J11" V 2888 4862 50  0000 R CNN
-F 1 "Conn_01x06_Female" V 2797 4862 50  0000 R CNN
+F 1 "usb_out" V 2797 4862 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2950 5250 50  0001 C CNN
 F 3 "~" H 2950 5250 50  0001 C CNN
 	1    2950 5250
@@ -2181,7 +2181,7 @@ L Connector:Screw_Terminal_01x02 J3
 U 1 1 60F5F2F4
 P 750 950
 F 0 "J3" H 668 625 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 668 716 50  0000 C CNN
+F 1 "Power5v" H 668 716 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 750 950 50  0001 C CNN
 F 3 "~" H 750 950 50  0001 C CNN
 	1    750  950 
